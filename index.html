@@ -1,93 +1,203 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Diablo Valley Villages</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diablo Valley Villages</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f5f5;
-      color: #222;
+<style>
+body{
+    margin:0;
+    background:#efefea;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#222;
+}
+
+.container{
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    border-radius:10px;
+    padding:40px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+h1{
+    text-align:center;
+    color:#198f38;
+    font-size:3rem;
+    margin-bottom:40px;
+}
+
+.logo-row{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+}
+
+.logo-row img{
+    width:170px;
+    max-width:100%;
+}
+
+hr{
+    margin:40px 0;
+}
+
+.section{
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+    margin-bottom:60px;
+}
+
+.section-text{
+    flex:2;
+}
+
+.section-image{
+    flex:1;
+}
+
+.section-image img{
+    width:100%;
+}
+
+h2{
+    color:#198f38;
+}
+
+.village{
+    margin-bottom:45px;
+}
+
+.village h3{
+    color:#198f38;
+    margin-bottom:10px;
+}
+
+.village-layout{
+    display:flex;
+    gap:40px;
+}
+
+.village-text{
+    flex:2;
+}
+
+.village-images{
+    flex:1;
+}
+
+.village-images img{
+    width:100%;
+    margin-bottom:30px;
+}
+
+@media (max-width:768px){
+
+    .section,
+    .village-layout{
+        flex-direction:column;
     }
 
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
+    h1{
+        font-size:2rem;
     }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .section {
-      background: white;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #666;
-    }
-  </style>
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Diablo Valley Villages</h1>
-    <p>Your tagline or short description goes here</p>
-  </header>
+<div class="container">
 
-  <div class="container">
+<h1>Diablo Valley Villages</h1>
 
-    <div class="section">
-      <h2>About</h2>
-      <p>
-        Paste your main text here. This is your intro or description of the project,
-        organization, or idea.
-      </p>
-    </div>
+<div class="logo-row">
+    <img src="image (5).png" alt="">
+    <img src="image (1).png" alt="">
+    <img src="image (2).png" alt="">
+    <img src="image (3).png" alt="">
+</div>
 
-    <div class="section">
-      <h2>Gallery</h2>
+<hr>
 
-      <p>Put your images below:</p>
+<div class="section">
 
-      <img src="image1.jpg" alt="Description of image 1">
-      <img src="image2.jpg" alt="Description of image 2">
+<div class="section-text">
+<h2>Welcome to Diablo Valley Villages</h2>
 
-    </div>
+<p>
+Replace this paragraph with your welcome message.
+Explain the purpose of Diablo Valley Villages,
+who it serves, and how local villages help older
+adults remain active, independent, and connected.
+</p>
 
-    <div class="section">
-      <h2>More Info</h2>
-      <p>
-        Add any extra text, links, or details here.
-      </p>
-    </div>
+<p>
+Add additional information here about volunteer
+support, community engagement, transportation,
+technology assistance, and other services.
+</p>
+</div>
 
-  </div>
+<div class="section-image">
+<img src="image (4).png" alt="">
+</div>
 
-  <footer>
-    © 2026 Diablo Valley Villages
-  </footer>
+</div>
+
+<h2>Our Local Villages</h2>
+
+<div class="village-layout">
+
+<div class="village-text">
+
+<div class="village">
+<h3>Lamorinda Village</h3>
+<p>
+Replace with Lamorinda Village description.
+</p>
+</div>
+
+<div class="village">
+<h3>Clayton Valley Village</h3>
+<p>
+Replace with Clayton Valley Village description.
+</p>
+</div>
+
+<div class="village">
+<h3>Mt. Diablo Village</h3>
+<p>
+Replace with Mt. Diablo Village description.
+</p>
+</div>
+
+<div class="village">
+<h3>San Ramon Valley Village</h3>
+<p>
+Replace with San Ramon Valley Village description.
+</p>
+</div>
+
+</div>
+
+<div class="village-images">
+<img src="image (5).png" alt="">
+<img src="image (1).png" alt="">
+<img src="image (2).png" alt="">
+<img src="image (3).png" alt="">
+</div>
+
+</div>
+
+</div>
 
 </body>
 </html>
+```
