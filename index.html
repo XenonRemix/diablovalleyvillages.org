@@ -35,20 +35,46 @@ h1{
 .logo-row{
     display:flex;
     justify-content:space-evenly;
-    align-items:center;
-    gap:30px;
+    align-items:flex-start;
+    gap:35px;
     margin-bottom:45px;
 }
 
-.logo-row img{
-    max-height:180px;
-    width:auto;
-    object-fit:contain;
+.logo-row a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
-    
+
+.logo-row img{
+    width:auto;
+    height:auto;
+    object-fit:contain;
+    transition:transform .2s ease, filter .2s ease;
+    cursor:pointer;
+}
+
 .logo-row img:hover{
     transform:scale(1.05);
     filter:brightness(1.05);
+}
+
+/* Individual logo sizes */
+.lamorinda{
+    height:170px;
+    margin-top:10px;
+}
+
+.clayton{
+    height:120px;
+}
+
+.mtdiablo{
+    height:145px;
+}
+
+.sanramon{
+    height:120px;
 }
 
 hr{
@@ -80,7 +106,7 @@ hr{
     max-width:100%;
     height:auto;
 }
-<!-- above could change  -->    
+
 
 h2{
     color:#15923A;
@@ -138,21 +164,23 @@ h2{
 <h1>Diablo Valley Villages</h1>
 
 <div class="logo-row">
+
     <a href="https://lamorindavillage.org" target="_blank" rel="noopener noreferrer">
-        <img src="image (2).png" alt="Village 1">
+        <img src="image (2).png" class="lamorinda" alt="Lamorinda Village">
     </a>
 
     <a href="https://www.claytonvalleyvillage.org" target="_blank" rel="noopener noreferrer">
-        <img src="image (3).png" alt="Village 2">
+        <img src="image (3).png" class="clayton" alt="Clayton Valley Village">
     </a>
 
     <a href="https://www.mtdiablovillage.org" target="_blank" rel="noopener noreferrer">
-        <img src="image (5).png" alt="Village 3">
+        <img src="image (5).png" class="mtdiablo" alt="Mt. Diablo Village">
     </a>
 
     <a href="https://sanramonvalleyvillage.org" target="_blank" rel="noopener noreferrer">
-        <img src="image (4).png" alt="Village 4">
+        <img src="image (4).png" class="sanramon" alt="San Ramon Valley Village">
     </a>
+
 </div>
 
 <hr>
