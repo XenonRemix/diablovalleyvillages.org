@@ -135,31 +135,37 @@ h2{
     font-weight:700;
     margin-bottom:15px;
 }
-
-.village-layout{
+.village{
     display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
     gap:40px;
+    margin-bottom:70px;
 }
 
-.village-text{
-    flex:2;
-}
-
-.village-images{
+.village-info{
     flex:1;
 }
 
-.village-images img{
-    width:100%;
-    margin-bottom:30px;
+.village-logo{
+    width:260px;
+    flex-shrink:0;
+    text-align:center;
 }
+
+.village-logo img{
+    max-width:100%;
+    height:auto;
+    object-fit:contain;
+}
+
 
 @media (max-width:768px){
 
-    .section,
-    .village-layout{
-        flex-direction:column;
-    }
+.section,
+.village{
+    flex-direction:column;
+}
 
     h1{
         font-size:2rem;
@@ -330,7 +336,6 @@ Each affiliate Village serves its local community while benefiting from the stre
 
 </div>
 
-</div>
 
 </body>
 </html>
